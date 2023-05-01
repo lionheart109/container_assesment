@@ -2,6 +2,7 @@ use studentdb;
 CREATE TABLE students (
   id INT AUTO_INCREMENT PRIMARY KEY,
   registration_number VARCHAR(10) NOT NULL,
+  st_name VARCHAR(15),
   vaccinated TINYINT NOT NULL
 );
 
