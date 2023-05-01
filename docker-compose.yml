@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+  db:
+    build: ./db/
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: chicken65
+      MYSQL_DATABASE: studentdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - /var/lib/docker/volumes/6aaa2b8114933c6d1da3b2fe230f6423224f84f72196d6491f19d5ef70f9d14f/_data
+

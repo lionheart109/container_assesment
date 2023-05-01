@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vacci check</title>
+    <style>
+        body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: poppins;
+  }
+
+  .form {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 4px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+  input {
+    background: #ecf0f3;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  button {
+    color: white;
+    margin-top: 50px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }
+  .footer{
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form action="/check" method="get">
+        <input type="text" name="register number" placeholder="reg no">
+        <input type="text" id="name" placeholder="name">
+        <button onclick="submit">submit</button>
+    </form>
+    <footer class="footer">use values '(reg no:1234,'brajesh')','(reg no:5678,'raaghav')' to get true output</footer>
+</div>
+</body>
+</html>
